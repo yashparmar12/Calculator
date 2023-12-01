@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <input type="text" name="" class="screen" placeholder="0">
+
+        <section>
+            <div class="calc-button-row">
+                <button class="calc-button double" onclick="clin()">
+                    C
+                </button>
+                <button class="calc-button delete" onclick="del()">
+                    &larr;
+                </button>
+                <button class="calc-button" onclick="show('/')">
+                    &divide;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="show('7')">
+                    7
+                </button >
+                <button class="calc-button" onclick="show('8')">
+                    8
+                </button>
+                <button class="calc-button" onclick="show('9')">
+                    9
+                </button>
+                <button class="calc-button" onclick="show('*')">
+                    &times;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="show('4')">
+                    4
+                </button>
+                <button class="calc-button" onclick="show('5')">
+                    5
+                </button>
+                <button class="calc-button" onclick="show('6')">
+                    6
+                </button>
+                <button class="calc-button" onclick="show('-')">
+                    &minus;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="show('1')">
+                    1
+                </button>
+                <button class="calc-button" onclick="show('2')">
+                    2
+                </button>
+                <button class="calc-button" onclick="show('3')">
+                    3
+                </button>
+                <button class="calc-button" onclick="show('+')">
+                    &plus;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button triple" onclick="show('0')">
+                    0
+                </button>
+                <button class="calc-button" onclick="cal('=')">
+                    &equals;
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
